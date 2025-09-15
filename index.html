@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/34d3a02d9f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <section class="left">
+        <div class="profile">
+          <div class="profile-img">
+          <img src="../Dahsboard/Multimedia/man.jpg" alt="user-img" /></div>
+          <p>John Doe</p>
+        </div>
+        <div class="navbar">
+        <div class="nav">
+          <i class="fa-solid fa-list"></i>
+          <a href="#board">DASHBOARD</a>
+        </div>
+        <div class="nav">
+          <i class="fa-solid fa-database"></i>
+          <a href="#data"> DATA</a>
+        </div>
+        <div class="nav">
+          <i class="fa-solid fa-user"></i>
+          <a href="#users">USERS</a>
+        </div>
+        <div class="nav">
+          <i class="fa-solid fa-calendar-days"></i>
+          <a href="#schedule">SCHEDULE</a>
+        </div>
+        <div class="nav">
+          <i class="fa-solid fa-address-book"></i>
+          <a href="#contact">CONTACT</a>
+        </div>
+      </div>
+      </section>
+      <section class="right">
+        <header>
+          <h1>DashBoard</h1>
+          <input type="text" placeholder="search. . ." />
+        </header>
+
+        <article id="board">
+          <div>
+            <h3>Activities</h3>
+            <p>May-June 2023</p>
+          </div>
+          <div>
+            <img
+              src="../Dahsboard/Multimedia/BarGraph.png"
+              alt="dashboard-img"
+            />
+          </div>
+        </article>
+        <article id="data">
+          <h2>Dashboard Data</h2>
+          <div class="card-con">
+            <div class="card1 card">
+              <i class="fa-solid fa-dollar-sign"></i>
+              <p class="cardHead">Revenue</p>
+              <p class="carddata">$456,553,563</p>
+            </div>
+            <div class="card2 card">
+              <i class="fa-solid fa-bookmark"></i>
+              <p class="cardHead">Total Transaction</p>
+              <p class="carddata">1,450</p>
+            </div>
+            <div class="card3 card">
+              <i class="fa-solid fa-thumbs-up"></i>
+              <p class="cardHead">Total Likes</p>
+              <p class="carddata">1,234</p>
+            </div>
+            <div class="card4 card">
+              <i class="fa-solid fa-user"></i>
+              <p class="cardHead">Total User</p>
+              <p class="carddata">856</p>
+            </div>
+          </div>
+        </article>
+        <article id="users`">
+          <h2>User Interactions</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>MONTH</th>
+                <th>NUMBER OF USERS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>JANUARY</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>FEBRUARY</td>
+                <td>1200</td>
+              </tr>
+              <tr>
+                <td>MARCH</td>
+                <td>1500</td>
+              </tr>
+              <tr>
+                <td>APRIL</td>
+                <td>1250</td>
+              </tr>
+              <tr>
+                <td>MAY</td>
+                <td>1600</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <article id="schedule">
+          <div class="schedule-head">
+            <h3>TODAY'S SCHEDULE</h3>
+            <p>SEE ALL</p>
+          </div>
+          <div class="schedule-details">
+            <div>
+              <p class="meets head">MEETINGS FROM SUPPLIERS FROM KUTTA BALI</p>
+              <p class="meets details">14:00-15.00</p>
+              <p class="meets details">AT SUNSET ROAD KUTTA BALI</p>
+            </div>
+            <div>
+              <p class="meets head">MEETINGS FROM SUPPLIERS FROM SURESH</p>
+              <p class="meets details">15:00-16.00</p>
+              <p class="meets details">AT SUNSET ROAD BALI</p>
+            </div>
+            <div>
+              <p class="meets head">MEETINGS FROM SUPPLIERS FROM AJAY</p>
+              <p class="meets details">12:00-1.00</p>
+              <p class="meets details">AT SUNSET ROAD</p>
+            </div>
+            <div>
+              <p class="meets head">MEETINGS FROM SUPPLIERS FROM ENCOPRICE</p>
+              <p class="meets details">2:00-3.00</p>
+              <p class="meets details">AT MORNING ON SOHNA ROAD</p>
+            </div>
+          </div>
+        </article>
+        <article id="contact">
+          <div>
+            <h2>CONTACT DETAILS</h2>
+          </div>
+          <div class="contact-inner">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.5400481078!2d77.04417375596314!3d28.52725273916797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1733649037043!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <div class="feedback-form">
+              <h2>FEEDBACK</h2>
+              <form action="#" method="post">
+                <input type="text" placeholder="Your Name" required /><br />
+                <input type="email" placeholder="Your Email" required /><br />
+                <textarea
+                  placeholder="Your Feedback"
+                  rows="5"
+                  required
+                ></textarea
+                ><br />
+                <input type="submit" value="Submit Feedback" />
+              </form>
+
+              <!-- </div>
+            
+            
+            
+            <p></p>
+            <div> -->
+            </div>
+          </div>
+          <footer>
+            <div>
+              <a href="https://www.facebook.com/?_rdr"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com/i/flow/signup"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+
+            <div>&copy; 2024 YOUR COMPANY NAME ALL RIGHTS RESERVED</div>
+          </footer>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
