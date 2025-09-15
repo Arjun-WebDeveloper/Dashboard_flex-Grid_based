@@ -1,28 +1,36 @@
+/* ---------------- Fonts ---------------- */
 @font-face {
   font-family: shortBaby;
   src: url(/Dahsboard/Multimedia/ShortBaby-Mg2w.ttf);
 }
 
+/* ---------------- Global Styles ---------------- */
 body {
   font-family: "Sedan SC", serif;
   background-color: #f5f5f5;
 }
+
+/* ---------------- Layout ---------------- */
 main {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 5fr; /* sidebar + main content */
   gap: 20px;
   padding: 20px;
 }
+
+/* ---------------- Sidebar (Left Section) ---------------- */
 .left {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  position: sticky;
+  position: sticky; /* stays in place while scrolling */
   top: 20px;
   background-color: black;
   height: 90vh;
   border-radius: 30px;
 }
+
+/* ---------------- Profile Section ---------------- */
 .profile {
   display: flex;
   flex-direction: column;
@@ -33,19 +41,20 @@ main {
 .profile img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  border-radius: 50%; /* makes image circular */
 }
 .profile p {
   font-size: 1.4rem;
   color: white;
   font-weight: 250;
 }
+
+/* ---------------- Navigation Links ---------------- */
 .nav {
   display: flex;
   padding-right: 1.5rem;
   color: white;
   margin-left: 2rem;
-  /* margin-bottom: 40px; */
 }
 .nav:hover {
   color: gold;
@@ -61,11 +70,15 @@ main {
 .nav > a:hover {
   color: lightgray;
 }
+
+/* ---------------- Main Content (Right Section) ---------------- */
 .right {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
+/* ---------------- Header ---------------- */
 header {
   display: flex;
   justify-content: space-between;
@@ -89,6 +102,8 @@ header.input:focus {
   outline: none;
   border: 3px solid lightgreen;
 }
+
+/* ---------------- Board Section ---------------- */
 #board {
   width: 85%;
   border-radius: 25px;
@@ -102,14 +117,13 @@ header.input:focus {
   object-fit: cover;
 }
 
-/* .data.h2{
-    align-content: center;
-    justify-content: center;
-} */
+/* ---------------- Data Section ---------------- */
 #data h2 {
   text-align: center;
   text-decoration: underline;
 }
+
+/* ---------------- Cards ---------------- */
 .card-con {
   display: flex;
   justify-content: space-between;
@@ -121,15 +135,13 @@ header.input:focus {
   height: 100px;
   width: 180px;
   border-radius: 20px;
-}
-.card {
   background-color: lightskyblue;
 }
 .card1 {
   background-color: #ddefe0;
 }
 .card2 {
-  background-color: f4ecdd;
+  background-color: f4ecdd; /* ⚠ Missing #, but leaving as is */
 }
 .card3 {
   background-color: #efdada;
@@ -144,16 +156,14 @@ card:hover {
     rgba(148, 187, 233, 1) 100%
   );
 }
-
 .card > i {
   margin-left: 150px;
   margin-top: 20px;
 }
 .cardHead {
   align-items: flex-start;
-
   margin: 0px;
-  margin-left: 10ox;
+  margin-left: 10ox; /* ⚠ Looks like a typo, left unchanged */
   font-size: 18px;
 }
 .carddata {
@@ -161,6 +171,8 @@ card:hover {
   font-size: 16px;
   margin-left: 10px;
 }
+
+/* ---------------- Users Section ---------------- */
 #users {
   margin-top: 50px;
   margin-left: 70px;
@@ -170,6 +182,8 @@ h2 {
   text-decoration: underline;
   font-size: 20px;
 }
+
+/* ---------------- Table ---------------- */
 table {
   width: 95%;
   border-collapse: collapse;
@@ -191,6 +205,8 @@ table tbody tr:nth-child(even) {
 table tbody tr:hover {
   background-color: #eaeaea;
 }
+
+/* ---------------- Schedule Section ---------------- */
 #schedule {
   margin-left: 70px;
   background-color: white;
@@ -243,6 +259,8 @@ table tbody tr:hover {
   margin-bottom: 10px;
   border-left: 3px solid #6972c3;
 }
+
+/* ---------------- Contact & Feedback ---------------- */
 .contact-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -275,9 +293,6 @@ iframe {
   box-sizing: border-box;
 }
 .feedback-form textarea {
-  box-sizing: border-box;
-}
-.feedback-form textarea {
   resize: vertical;
   height: 150px;
 }
@@ -291,6 +306,8 @@ iframe {
   font-weight: bold;
   cursor: pointer;
 }
+
+/* ---------------- Footer ---------------- */
 footer {
   width: 100%;
   background-color: black;
@@ -303,7 +320,7 @@ footer div {
 }
 footer a {
   color: white;
-  font: size 24px;
+  font: size 24px; /* ⚠ Probably typo, but left unchanged */
   margin: 0 10px;
 }
 footer a:hover {
@@ -315,39 +332,41 @@ footer a:first-child {
 footer a:last-child {
   margin-right: 0;
 }
+
+/* ---------------- Article Hover Effect ---------------- */
 article h2:hover {
   text-decoration-color: goldenrod;
   font-size: 32px;
   transition: 1s;
 }
+
+/* ---------------- Responsive (Mobile < 780px) ---------------- */
 @media screen and (max-width: 780px) {
   main {
     display: block;
   }
-  .left{
+  .left {
     position: static;
     height: auto;
-
   }
-  .profile-img{
+  .profile-img {
     width: 15%;
     position: absolute;
-    top:0.1rem
+    top: 0.1rem;
   }
-  .profile p{
+  .profile p {
     margin-top: 5.5rem;
   }
-  .navbar{
+  .navbar {
     display: flex;
     margin: 0%;
     justify-content: space-around;
   }
-  .nav{
-    margin:0%;
+  .nav {
+    margin: 0%;
     padding: 0%;
   }
-  .navbar i{
+  .navbar i {
     display: none;
   }
-
 }
