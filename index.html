@@ -2,9 +2,12 @@
 <html lang="en">
   <head>
     <!-- Document type declaration for HTML5 -->
-    <meta charset="UTF-8" /> <!-- Character encoding (supports all characters including special symbols) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Makes page responsive -->
-    <title>Document</title> <!-- Title shown in browser tab -->
+    <meta charset="UTF-8" />
+    <!-- Character encoding (supports all characters including special symbols) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Makes page responsive -->
+    <title>Dashboard</title>
+    <!-- Title shown in browser tab -->
 
     <!-- Linking external stylesheet -->
     <link rel="stylesheet" href="stylesheet.css" />
@@ -78,10 +81,7 @@
             <p>May-June 2023</p>
           </div>
           <div>
-            <img
-              src="Multimedia/BarGraph.png"
-              alt="dashboard-img"
-            />
+            <img src="Multimedia/BarGraph.png" alt="dashboard-img" />
           </div>
         </article>
 
@@ -119,21 +119,38 @@
         <!-- User Interaction Table -->
         <article id="users">
           <h2>User Interactions</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>MONTH</th>
-                <th>NUMBER OF USERS</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>JANUARY</td><td>1000</td></tr>
-              <tr><td>FEBRUARY</td><td>1200</td></tr>
-              <tr><td>MARCH</td><td>1500</td></tr>
-              <tr><td>APRIL</td><td>1250</td></tr>
-              <tr><td>MAY</td><td>1600</td></tr>
-            </tbody>
-          </table>
+          <!-- <div> -->
+            <table>
+              <thead>
+                <tr>
+                  <th>MONTH</th>
+                  <th>NUMBER OF USERS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>JANUARY</td>
+                  <td>1000</td>
+                </tr>
+                <tr>
+                  <td>FEBRUARY</td>
+                  <td>1200</td>
+                </tr>
+                <tr>
+                  <td>MARCH</td>
+                  <td>1500</td>
+                </tr>
+                <tr>
+                  <td>APRIL</td>
+                  <td>1250</td>
+                </tr>
+                <tr>
+                  <td>MAY</td>
+                  <td>1600</td>
+                </tr>
+              </tbody>
+            </table>
+          <!-- </div> -->
         </article>
 
         <!-- Schedule Section -->
@@ -193,7 +210,8 @@
                   placeholder="Your Feedback"
                   rows="5"
                   required
-                ></textarea><br />
+                ></textarea
+                ><br />
                 <input type="submit" value="Submit Feedback" />
               </form>
             </div>
@@ -214,9 +232,7 @@
               </a>
             </div>
 
-            <div>
-              &copy; 2024 YOUR COMPANY NAME ALL RIGHTS RESERVED
-            </div>
+            <div>&copy; 2024 YOUR COMPANY NAME ALL RIGHTS RESERVED</div>
           </footer>
         </article>
       </section>
